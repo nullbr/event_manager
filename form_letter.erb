@@ -26,5 +26,13 @@
       <td><%= "#{legislators}" %></td>
     <% end %>
   </table>
+
+  <small>
+    <% if phone_number.empty? %>
+      You have not registered a valid phone number to recieve voting notifications
+    <% else %>
+      You will be recieving a reminder to vote at the phone number registered: <%= phone_number %>
+    <% end %>
+  </small>
 </body>
 </html>
