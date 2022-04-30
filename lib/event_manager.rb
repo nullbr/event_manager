@@ -82,11 +82,11 @@ contents.each do |row|
 
   phone_number = clean_phone_number(row[:homephone])
 
-  # legislators = legislator_by_zipcode(zipcode)
+  legislators = legislator_by_zipcode(zipcode)
 
-  # form_letter = erb_template.result(binding)
+  form_letter = erb_template.result(binding)
 
-  # save_thank_you_letter(id,form_letter)
+  save_thank_you_letter(id,form_letter)
 
   time = get_reg_time(row[:regdate])
 
